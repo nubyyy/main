@@ -1,1 +1,11 @@
-<meta http-equiv="Refresh" content="0; url='https://hmsanswers.com/test/index.php'" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<button>test</button>
+<script>
+$("button").click(function(){
+  $.get("demo_test.asp", function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+});
+</script>
